@@ -96,6 +96,7 @@ def main():
     sess = init_gpu("0")
     ali = aligner(sess)
     model = get_feature_extractor("low_extract", custom_weights=args.robust_weights)
+    
 
     random.seed(10)
     print("Extracting features...", flush=True)
